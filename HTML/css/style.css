@@ -414,6 +414,8 @@ h1 span, h3 span{
     opacity: 0;
 }
 .home .pict-home img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -555,6 +557,15 @@ h1 span, h3 span{
 /* 4. start about this */
 .about{
     background-color: var(--clr-secondary);
+}
+.pict-about img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.pict-about img:hover{
+    transition: all .5s;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
 }
 .about h1 span{
     color: var(--clr-primary);
@@ -816,25 +827,16 @@ h1 span, h3 span{
 .content .line-2 h3{
     opacity: 0;
 }
-/* .content .line-1 h1,
-.content .line-1 h3{
-    animation: y 1s ease-in-out;
+.pict-about img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
-.content .line-2 h3,
-.content .line-2 h1{
-    animation: y 4s ease-in-out;
-} */
+.pict-about img:hover{
+    transition: all .5s;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
 .content .line-1 .line,
 .content .line-2 .line{
     opacity: 0;
 }
-/* .content .line-1 .line{
-    animation: r 2.5s ease-in-out;
-}
-.content .line-2 .line{
-    animation: l 3s ease-in-out;
-}
-.content .pict-page-project{
-    animation: y 8.5s ease-in-out;
-} */
-/* end page project this */
