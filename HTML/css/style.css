@@ -91,6 +91,7 @@ main font = liberation sans,liberation serif
     --clr-white:#ffffff;
 
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 @font-face{
     font-family: 'liberation sans';
@@ -519,8 +520,11 @@ h1 span, h3 span{
 .item-skill i{
     position: relative;
     font-size: 3rem;
-    display: inline-block;
-    padding: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
     color: var(--clr-white);
     border: 2px solid var(--clr-primary);
     border-radius: 50%;
@@ -549,6 +553,10 @@ h1 span, h3 span{
     background-color: var(--clr-secondary);
 }
 .item-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: var(--clr-dark);
     padding: 1rem;
@@ -558,9 +566,12 @@ h1 span, h3 span{
 }
 .item-services i{
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3rem;
-    padding: 3rem;
+    width: 150px;
+    height: 150px;
     color: var(--clr-white);
     border: 2px solid var(--clr-primary);
     border-radius: 50%;
