@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .box {
+    /* Set property */
+    width:4em;
+    height:2em;
+    background-color:#d42;
+    position:relative;
+}
+.box:after {
+    /* Inherit property */
+    width:inherit;
+    content:"";
+    height:1em;
+    background-color:blue;
+    position:absolute;
+    top:100%;
+}
+    </style>
+</head>
+<body>
+
+<div id="box" class="box"></div>
+
+<script>
+    var width = 2;
+var interval = setInterval(function () {
+    var element = document.querySelector('.box');
+    width += 0.0625;
+    element.style.width = width + 'em';
+    if (width >= 7) clearInterval(interval);
+}, 50);
+</script>
+</body>
+</html>
