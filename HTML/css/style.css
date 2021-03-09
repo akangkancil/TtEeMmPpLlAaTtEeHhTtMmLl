@@ -515,6 +515,10 @@ h1 span, h3 span{
     background-color: var(--clr-dark);
 }
 .item-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 .item-skill i{
